@@ -39,16 +39,6 @@
         </div>
     </section>
     <script>
-        function updateBagColor() {
-            const handleColor = document.getElementById('handle-color').value;
-            const outerColor = document.getElementById('outer-color').value;
-            const innerColor = document.getElementById('inner-color').value;
-
-            document.getElementById('handle').setAttribute('fill', handleColor);
-            document.getElementById('outer-bag').setAttribute('fill', outerColor);
-            document.getElementById('inner-bag').setAttribute('fill', innerColor);
-        }
-
         function proceedToPayment() {
             localStorage.setItem('handleColor', document.getElementById('handle-color').value);
             localStorage.setItem('outerColor', document.getElementById('outer-color').value);
@@ -56,14 +46,5 @@
             location.href = 'payment.html';
         }
     </script>
-    <style>
-        .diy-paint-img {
-            display: block;
-            margin: 20px auto;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </body>
 </html>
